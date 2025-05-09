@@ -19,8 +19,8 @@ const CONFIG = {
         sortBy: 'stars', // Sort projects by 'stars' or 'updated'
         limit: 8, // How many projects to display.
         exclude: {
-          forks: false, // Forked projects will not be displayed if set to true.
-          projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
+          forks: true, // Forked projects will not be displayed if set to true.
+          projects: ['Alilo2005/portfolio'], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
         },
       },
       manual: {
@@ -32,6 +32,7 @@ const CONFIG = {
       header: '',
       // To hide the `External Projects` section, keep it empty.
       projects: [
+
       ],
     },
   },
@@ -121,7 +122,7 @@ const CONFIG = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'lofi',
+    defaultTheme: 'Luxury', // Default theme, check https://daisyui.com/docs/theming/
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
