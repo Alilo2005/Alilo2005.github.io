@@ -9,7 +9,7 @@ const CONFIG = {
    * If you are deploying to https://<USERNAME>.github.io/<REPO_NAME>/,
    * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
    */
-  base: '/gitprofile/',
+  base: '/',
   projects: {
     github: {
       display: true, // Display GitHub projects?
@@ -39,7 +39,7 @@ const CONFIG = {
   seo: {
     title: 'Portfolio of Mahdi Ali',
     description: 'Web Developer | Open Source Contributor | Tech Enthusiast | AI Enthusiast',
-    imageURL: '/ghibli.png',
+    imageURL: '',
   },
   social: {
     instagram: 'mahdiali9893',
