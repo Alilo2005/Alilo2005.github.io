@@ -39,7 +39,7 @@ const CONFIG = {
   seo: {
     title: 'Portfolio of Mahdi Ali',
     description: 'Web Developer | Open Source Contributor | Tech Enthusiast | AI Enthusiast',
-    imageURL: '',
+    imageURL: 'https://drive.google.com/file/d/1kauegW4s8MMrJOL7H-qeJp0GUnmCs1ap/view?usp=drive_link',
   },
   social: {
     instagram: 'mahdiali9893',
@@ -48,7 +48,7 @@ const CONFIG = {
   },
   resume: {
     fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+      'https://docs.google.com/document/d/17VFrGbotdwOr6415Gual3rwFuQecGy3z/edit?usp=drive_link&ouid=114092860076964475305&rtpof=true&sd=true', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'JavaScript',
@@ -122,7 +122,7 @@ const CONFIG = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'Luxury', // Default theme, check https://daisyui.com/docs/theming/
+    defaultTheme: 'luxury', // Default theme, check https://daisyui.com/docs/theming/
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
@@ -184,11 +184,11 @@ const CONFIG = {
   },
 
   // Optional Footer. Supports plain text or HTML.
-  footer: `Made with <a 
+  footer: `Made by <a 
       class="text-primary" href="https://github.com/arifszn/gitprofile"
       target="_blank"
       rel="noreferrer"
-    >Mahdi Ali</a> and ❤️`,
+    >Mahdi Ali</a> with ❤️`,
 
   enablePWA: true,
 };
