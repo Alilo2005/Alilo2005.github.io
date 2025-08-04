@@ -48,7 +48,7 @@ const CONFIG = {
   },
   resume: {
     fileUrl:
-      'https://docs.google.com/document/d/17VFrGbotdwOr6415Gual3rwFuQecGy3z/edit?usp=drive_link&ouid=114092860076964475305&rtpof=true&sd=true', // Empty fileUrl will hide the `Download Resume` button.
+      'https://drive.google.com/file/d/1W1FPgbYbySsB5cSo_ex7DG-fcJv7nNbh/view?usp=sharing', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'JavaScript',
