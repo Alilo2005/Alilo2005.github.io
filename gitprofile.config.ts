@@ -130,7 +130,7 @@ const CONFIG = {
   blog: {
   },
   googleAnalytics: {
-    id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
+    id: 'G-TR5XQ4SPFG', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
   },
   // Track visitor interaction and behavior. https://www.hotjar.com
   hotjar: {
@@ -138,7 +138,7 @@ const CONFIG = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'sunset', // Default theme, check https://daisyui.com/docs/theming/
+    defaultTheme: 'forest', // Default theme, check https://daisyui.com/docs/theming/
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
