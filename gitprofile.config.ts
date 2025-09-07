@@ -138,7 +138,7 @@ const CONFIG = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'forest', // Default theme, check https://daisyui.com/docs/theming/
+    defaultTheme: 'coffee', // Default theme, check https://daisyui.com/docs/theming/
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
@@ -200,11 +200,9 @@ const CONFIG = {
   },
 
   // Optional Footer. Supports plain text or HTML.
-  footer: `Made by <a 
-      class="text-primary" href="https://github.com/arifszn/gitprofile"
-      target="_blank"
-      rel="noreferrer"
-    >Mahdi Ali</a> with ❤️`,
+  footer: `Made by <p
+      class="text-primary"
+    >Mahdi Ali</p> with ❤️`,
 
   enablePWA: true,
 };
