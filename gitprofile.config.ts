@@ -200,9 +200,11 @@ const CONFIG = {
   },
 
   // Optional Footer. Supports plain text or HTML.
-  footer: `Made by <p
-      class="text-primary"
-    >Mahdi Ali</p> with ❤️`,
+  footer: `Made by <a 
+      class="text-primary" href="https://github.com/Alilo2005"
+      target="_blank"
+      rel="noreferrer"
+    >Mahdi Ali</a> with ❤️`,
 
   enablePWA: true,
 };
