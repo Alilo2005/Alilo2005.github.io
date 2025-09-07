@@ -14,7 +14,7 @@ const CONFIG = {
     github: {
       display: true, // Display GitHub projects?
       header: 'Github Projects',
-      mode: 'automatic', // Mode can be: 'automatic' or 'manual'
+      mode: 'manual', // Mode can be: 'automatic' or 'manual'
       automatic: {
         sortBy: 'stars', // Sort projects by 'stars' or 'updated'
         limit: 8, // How many projects to display.
@@ -25,7 +25,7 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: [], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: ['Alilo2005/CineAi', 'Alilo2005/TRACEROUTE-GLOBE-VIZ', 'Alilo2005/ali-shop'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
@@ -48,23 +48,32 @@ const CONFIG = {
   },
   resume: {
     fileUrl:
-      'https://drive.google.com/file/d/1W1FPgbYbySsB5cSo_ex7DG-fcJv7nNbh/view?usp=sharing', // Empty fileUrl will hide the `Download Resume` button.
+      '', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'JavaScript',
     'React.js',
     'Node.js',
     'Express.js',
+    'Next.js',
     'MySQL',
+    'MongoDB',
     'Git',
     'Tailwind CSS',
     'Python',
-    'Django rest framework',
     'Angular',
     'Java',
     'C',
+    'Assembly'
   ],
   experiences: [
+     {
+      company: 'Astrotech',
+      position: 'Projects Manager',
+      from: 'September 2025',
+      to: 'Present',
+      companyLink: 'https://www.instagram.com/astrotech_esi/',
+    },
     {
       company: 'GDG Algiers',
       position: 'Web Developer',
@@ -73,11 +82,18 @@ const CONFIG = {
       companyLink: 'https://gdg.community.dev/gdg-algiers/',
     },
     {
-      company: 'CSE Algiers',
+      company: 'Shellmates',
       position: 'Web Developer',
       from: 'September 2024',
       to: 'Present',
-      companyLink: 'https://cse-esi.dz/',
+      companyLink: 'https://www.shellmates.club/',
+    },
+    {
+      company: 'School of AI',
+      position: 'Technical',
+      from: 'September 2024',
+      to: 'Present',
+      companyLink: 'https://www.instagram.com/soai_algiers/',
     }
   ],
   certifications: [
@@ -97,13 +113,13 @@ const CONFIG = {
   educations: [
     {
       institution: 'Esi Algiers',
-      degree: 'Ingénieur d\'État en Informatique',
+      degree: 'Computer Science Engineer',
       from: '2022',
       to: '2027',
     },
     {
-      institution: 'Lycée Belckacemi-Ahmed',
-      degree: 'Baccalauréat en mathématiques',
+      institution: 'Belckacemi-Ahmed High School',
+      degree: 'Baccalaureat in mathematics',
       from: '2019',
       to: '2022',
     },
@@ -122,7 +138,7 @@ const CONFIG = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'coffee', // Default theme, check https://daisyui.com/docs/theming/
+    defaultTheme: 'sunset', // Default theme, check https://daisyui.com/docs/theming/
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
