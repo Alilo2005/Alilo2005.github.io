@@ -13,7 +13,7 @@ const CONFIG = {
   projects: {
     github: {
       display: true, // Display GitHub projects?
-      header: 'Github Projects',
+      header: 'Projects',
       mode: 'manual', // Mode can be: 'automatic' or 'manual'
       automatic: {
         sortBy: 'stars', // Sort projects by 'stars' or 'updated'
@@ -25,7 +25,7 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['Alilo2005/CineAi', 'Alilo2005/TRACEROUTE-GLOBE-VIZ', 'Alilo2005/ali-shop'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: ['Alilo2005/ali-shop', 'Alilo2005/CineAi', 'Alilo2005/TRACEROUTE-GLOBE-VIZ'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
@@ -94,6 +94,13 @@ const CONFIG = {
       from: 'September 2024',
       to: 'Present',
       companyLink: 'https://www.instagram.com/soai_algiers/',
+    },
+      {
+      company: 'Partners Algeria',
+      position: 'Intern',
+      from: 'July 2025',
+      to: 'August 2025',
+      companyLink: 'https://www.facebook.com/AlgeriaPartnersOfficiel/',
     }
   ],
   certifications: [
