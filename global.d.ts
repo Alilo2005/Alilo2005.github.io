@@ -380,9 +380,19 @@ interface Config {
   social?: Social;
 
   /**
+   * Custom bio/description (overrides GitHub bio)
+   */
+  bio?: string;
+
+  /**
    * Skill list
    */
   skills?: Array<string>;
+
+  /**
+   * Hobbies list
+   */
+  hobbies?: Array<string>;
 
   /**
    * Experience list

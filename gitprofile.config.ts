@@ -42,10 +42,12 @@ const CONFIG = {
     imageURL: 'https://drive.google.com/file/d/1kauegW4s8MMrJOL7H-qeJp0GUnmCs1ap/view?usp=drive_link',
   },
   social: {
+    linkedin: 'mahdi-ali-59b08829b',
     instagram: 'mahdiali9893',
     phone: '+213667622648',
     email: 'ma_mahdi@esi.dz',
   },
+  bio: 'Full-Stack Web Developer | IST engineer @ ESI | Passionate About AI & Emerging Tech',
   resume: {
     fileUrl:
       '', // Empty fileUrl will hide the `Download Resume` button.
@@ -65,6 +67,11 @@ const CONFIG = {
     'Java',
     'C',
     'Assembly'
+  ],
+  hobbies: [
+    'Writing',
+    'Gaming',
+    'Reading'
   ],
   experiences: [
      {

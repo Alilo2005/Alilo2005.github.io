@@ -21,6 +21,7 @@ import AvatarCard from './avatar-card';
 import { Profile } from '../interfaces/profile';
 import DetailsCard from './details-card';
 import SkillCard from './skill-card';
+import HobbyCard from './hobby-card';
 import ExperienceCard from './experience-card';
 import EducationCard from './education-card';
 import CertificationCard from './certification-card';
@@ -109,7 +110,7 @@ const GitProfile = ({ config }: { config: Config }) => {
       setProfile({
         avatar: data.avatar_url,
         name: data.name || ' ',
-        bio: data.bio || '',
+        bio: sanitizedConfig.bio || data.bio || '',
         location: data.location || '',
         company: data.company || '',
       });
@@ -222,6 +223,12 @@ const GitProfile = ({ config }: { config: Config }) => {
                       <SkillCard
                         loading={loading}
                         skills={sanitizedConfig.skills}
+                      />
+                    )}
+                    {sanitizedConfig.hobbies.length !== 0 && (
+                      <HobbyCard
+                        loading={loading}
+                        hobbies={sanitizedConfig.hobbies}
                       />
                     )}
                     {sanitizedConfig.experiences.length !== 0 && (
