@@ -124,10 +124,10 @@ const CONFIG = {
       link: 'https://www.freecodecamp.org/certification/Ali_Mahdi/javascript-algorithms-and-data-structures',
     },
     {
-      name: 'DataBase Mangaement with MySQL',
-      body: 'reprsent 300 hours of training in JavaScript DSA',
-      year: 'August 2023',
-      link: 'https://app.datacamp.com/',
+      name: 'Database Mangaement with MySQL',
+      body: 'Navigate and extract insights from the data using SQL',
+      year: 'August 2025',
+      link: 'https://www.datacamp.com/completed/statement-of-accomplishment/course/ca423e67a2cbb87d5e8dabaad0e41785b72d7f90',
     }
   ],
   educations: [
