@@ -104,7 +104,7 @@ const CONFIG = {
     },
       {
       company: 'Partners Algeria',
-      position: 'Intern',
+      position: 'Web Developer Intern',
       from: 'July 2025',
       to: 'August 2025',
       companyLink: 'https://www.facebook.com/AlgeriaPartnersOfficiel/',
@@ -117,11 +117,17 @@ const CONFIG = {
       year: 'Septembre 2024',
       link: 'https://www.freecodecamp.org/certification/Ali_Mahdi/back-end-development-and-apis',
     },
-        {
+    {
       name: 'Data structures and Algorithms in JavaScript',
-      body: 'reprsent 300 hours of training in backend development and APIs',
+      body: 'reprsent 300 hours of training in JavaScript DSA',
       year: 'August 2023',
       link: 'https://www.freecodecamp.org/certification/Ali_Mahdi/javascript-algorithms-and-data-structures',
+    },
+    {
+      name: 'DataBase Mangaement with MySQL',
+      body: 'reprsent 300 hours of training in JavaScript DSA',
+      year: 'August 2023',
+      link: 'https://app.datacamp.com/',
     }
   ],
   educations: [
