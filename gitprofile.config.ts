@@ -66,7 +66,8 @@ const CONFIG = {
     'Angular',
     'Java',
     'C',
-    'Assembly'
+    'Assembly',
+    'DjangoRestFramework'
   ],
   hobbies: [
     'Writing',
