@@ -118,6 +118,12 @@ const CONFIG = {
       link: 'https://www.freecodecamp.org/certification/Ali_Mahdi/back-end-development-and-apis',
     },
     {
+      name: 'Cloud Computing 101 by Amazon',
+      body: 'Amazon Web Services Training and Certification',
+      year: 'Octobre 2025',
+      link: 'https://www.credly.com/badges/da53037e-9632-4727-9a72-dce4972f8f68/public_url',
+    },
+    {
       name: 'Data structures and Algorithms in JavaScript',
       body: 'reprsent 300 hours of training in JavaScript DSA',
       year: 'August 2023',
