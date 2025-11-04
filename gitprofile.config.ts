@@ -67,7 +67,8 @@ const CONFIG = {
     'Java',
     'C',
     'Assembly',
-    'DjangoRestFramework'
+    'DjangoRestFramework',
+    'Spring boot',
   ],
   hobbies: [
     'Writing',
@@ -79,28 +80,28 @@ const CONFIG = {
       company: 'Astrotech',
       position: 'Projects Manager',
       from: 'September 2025',
-      to: 'Present',
+      to: 'Novembre 2025',
       companyLink: 'https://www.instagram.com/astrotech_esi/',
     },
     {
       company: 'GDG Algiers',
       position: 'Web Developer',
       from: 'September 2024',
-      to: 'Present',
+      to: 'Novembre 2025',
       companyLink: 'https://gdg.community.dev/gdg-algiers/',
     },
     {
       company: 'Shellmates',
       position: 'Web Developer',
       from: 'September 2024',
-      to: 'Present',
+      to: 'Novembre 2025',
       companyLink: 'https://www.shellmates.club/',
     },
     {
       company: 'School of AI',
       position: 'Technical',
       from: 'September 2024',
-      to: 'Present',
+      to: 'Novembre 2025',
       companyLink: 'https://www.instagram.com/soai_algiers/',
     },
       {
@@ -108,7 +109,13 @@ const CONFIG = {
       position: 'Web Developer Intern',
       from: 'July 2025',
       to: 'August 2025',
-      companyLink: 'https://www.facebook.com/AlgeriaPartnersOfficiel/',
+      companyLink: 'https://www.facebook.com/AlgeriaPartnersOfficiel/',},
+      {
+      company: 'Spintechs',
+      position: 'Backend Developer Intern',
+      from: 'Novembre 2025',
+      to: 'Present',
+      companyLink: 'http://www.spintechs.net/',
     }
   ],
   certifications: [
