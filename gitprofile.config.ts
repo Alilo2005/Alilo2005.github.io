@@ -112,7 +112,7 @@ const CONFIG = {
       companyLink: 'https://www.facebook.com/AlgeriaPartnersOfficiel/',},
       {
       company: 'Spintechs',
-      position: 'Backend Developer Intern',
+      position: 'Web Developer Intern',
       from: 'Novembre 2025',
       to: 'Present',
       companyLink: 'http://www.spintechs.net/',
