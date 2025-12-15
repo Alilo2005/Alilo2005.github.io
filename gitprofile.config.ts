@@ -40,6 +40,11 @@ const CONFIG = {
     title: 'Portfolio of Mahdi Ali',
     description: 'Web Developer | Open Source Contributor | Tech Enthusiast | AI Enthusiast',
     imageURL: 'https://drive.google.com/file/d/1kauegW4s8MMrJOL7H-qeJp0GUnmCs1ap/view?usp=drive_link',
+    url: 'https://alilo2005.github.io/',
+    author: 'Mahdi Ali',
+    keywords: 'Mahdi Ali, Web Developer, Full-Stack Developer, React, Node.js, JavaScript, Portfolio, Software Engineer, ESI Algiers, AI Enthusiast, Open Source',
+    twitter: '@mahdiali9893',
+    jobTitle: 'Full-Stack Web Developer',
   },
   social: {
     linkedin: 'mahdi-ali-59b08829b',
