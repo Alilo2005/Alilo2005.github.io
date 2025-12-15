@@ -40,6 +40,11 @@ export interface SanitizedSEO {
   title?: string;
   description?: string;
   imageURL?: string;
+  url?: string;
+  author?: string;
+  keywords?: string;
+  twitter?: string;
+  jobTitle?: string;
 }
 
 export interface SanitizedSocial {

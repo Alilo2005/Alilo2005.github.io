@@ -5,24 +5,44 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
     <title><%- metaTitle %></title>
-
-    <meta property="title" content="<%- metaTitle %>" />
+    <meta name="title" content="<%- metaTitle %>" />
     <meta name="description" content="<%- metaDescription %>" />
+    <meta name="author" content="<%- metaAuthor %>" />
+    <meta name="keywords" content="<%- metaKeywords %>" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta http-equiv="Content-Language" content="en" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="<%- metaUrl %>" />
 
+    <!-- Schema.org for Google -->
     <meta itemprop="name" content="<%- metaTitle %>" />
     <meta itemprop="description" content="<%- metaDescription %>" />
     <meta itemprop="image" content="<%- metaImageURL %>" />
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<%- metaUrl %>" />
     <meta property="og:title" content="<%- metaTitle %>" />
     <meta property="og:description" content="<%- metaDescription %>" />
     <meta property="og:image" content="<%- metaImageURL %>" />
     <meta property="og:image:secure_url" content="<%- metaImageURL %>" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="<%- metaTitle %>" />
+    <meta property="og:locale" content="en_US" />
 
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="<%- metaUrl %>" />
     <meta name="twitter:title" content="<%- metaTitle %>" />
     <meta name="twitter:description" content="<%- metaDescription %>" />
     <meta name="twitter:image" content="<%- metaImageURL %>" />
+    <meta name="twitter:creator" content="<%- metaTwitter %>" />
    <link
   rel="stylesheet" 
   href="https://cdn.bestland.ing/abtests.css" />
@@ -32,6 +52,20 @@
   data-project="e500r4mh0gdouk29br6x0i2t"
   async>
 </script>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "<%- metaAuthor %>",
+      "url": "<%- metaUrl %>",
+      "image": "<%- metaImageURL %>",
+      "description": "<%- metaDescription %>",
+      "jobTitle": "<%- metaJobTitle %>",
+      "sameAs": <%- metaSocialLinks %>
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>

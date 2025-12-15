@@ -1,3 +1,8 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /node_modules/
+Disallow: /dist/
+
+# Sitemaps
+Sitemap: https://alilo2005.github.io/sitemap.xml
