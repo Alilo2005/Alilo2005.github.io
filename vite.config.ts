@@ -17,21 +17,28 @@ export default defineConfig({
           metaImageURL: CONFIG.seo.imageURL,
           metaAuthor: CONFIG.seo.author || CONFIG.github.username,
           metaKeywords: CONFIG.seo.keywords || '',
-          metaCanonicalURL: CONFIG.seo.canonicalURL || `https://${CONFIG.github.username}.github.io${CONFIG.base === '/' ? '' : (CONFIG.base || '')}`,
+          metaCanonicalURL: (() => {
+            if (CONFIG.seo.canonicalURL) return CONFIG.seo.canonicalURL;
+            const base = CONFIG.base === '/' ? '' : (CONFIG.base || '');
+            return `https://${CONFIG.github.username}.github.io${base}`;
+          })(),
           metaJobTitle: CONFIG.bio || '',
-          metaSocialLinks: JSON.stringify(
-            Object.entries(CONFIG.social || {})
-              .filter(([_, value]) => value)
-              .map(([platform, handle]) => {
-                const socialUrls: Record<string, string> = {
-                  linkedin: `https://www.linkedin.com/in/${handle}`,
-                  instagram: `https://www.instagram.com/${handle}`,
-                  email: `mailto:${handle}`,
-                  phone: `tel:${handle}`,
-                };
-                return socialUrls[platform] || handle;
-              })
-          ),
+          metaSocialLinks: (() => {
+            const socialUrls: Record<string, string> = {
+              linkedin: `https://www.linkedin.com/in/${'{handle}'}`,
+              instagram: `https://www.instagram.com/${'{handle}'}`,
+              email: `mailto:${'{handle}'}`,
+              phone: `tel:${'{handle}'}`,
+            };
+            return JSON.stringify(
+              Object.entries(CONFIG.social || {})
+                .filter(([_, value]) => value)
+                .map(([platform, handle]) => {
+                  const template = socialUrls[platform];
+                  return template ? template.replace('{handle}', handle as string) : handle;
+                })
+            );
+          })(),
         },
       },
     }),
@@ -45,9 +52,12 @@ export default defineConfig({
             includeAssets: ['logo.png'],
             manifest: {
               name: CONFIG.seo.title || 'Portfolio',
-              short_name: (CONFIG.seo.title && CONFIG.seo.title.split(' ').length >= 2) 
-                ? CONFIG.seo.title.split(' ').slice(0, 2).join(' ') 
-                : CONFIG.seo.title || 'Portfolio',
+              short_name: (() => {
+                const title = CONFIG.seo.title;
+                if (!title) return 'Portfolio';
+                const words = title.split(' ');
+                return words.length >= 2 ? words.slice(0, 2).join(' ') : title;
+              })(),
               description: CONFIG.seo.description || 'Personal Portfolio',
               theme_color: '#000000',
               background_color: '#ffffff',
