@@ -20,11 +20,13 @@ export default defineConfig({
           metaKeywords: CONFIG.seo.keywords || '',
           metaTwitter: CONFIG.seo.twitter || '',
           metaJobTitle: CONFIG.seo.jobTitle || '',
-          metaSocialLinks: JSON.stringify([
-            CONFIG.social.linkedin ? `https://www.linkedin.com/in/${CONFIG.social.linkedin}` : '',
-            CONFIG.social.instagram ? `https://www.instagram.com/${CONFIG.social.instagram}` : '',
-            CONFIG.github.username ? `https://github.com/${CONFIG.github.username}` : '',
-          ].filter(Boolean)),
+          metaSocialLinks: JSON.stringify(
+            [
+              CONFIG.social.linkedin && `https://www.linkedin.com/in/${CONFIG.social.linkedin}`,
+              CONFIG.social.instagram && `https://www.instagram.com/${CONFIG.social.instagram}`,
+              CONFIG.github.username && `https://github.com/${CONFIG.github.username}`,
+            ].filter(Boolean)
+          ),
         },
       },
     }),
