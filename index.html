@@ -5,6 +5,10 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="author" content="<%- metaAuthor %>" />
+    <meta name="keywords" content="<%- metaKeywords %>" />
+    <link rel="canonical" href="<%- metaCanonicalURL %>" />
     <title><%- metaTitle %></title>
 
     <meta property="title" content="<%- metaTitle %>" />
@@ -14,12 +18,17 @@
     <meta itemprop="description" content="<%- metaDescription %>" />
     <meta itemprop="image" content="<%- metaImageURL %>" />
 
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<%- metaCanonicalURL %>" />
+    <meta property="og:site_name" content="<%- metaTitle %>" />
     <meta property="og:title" content="<%- metaTitle %>" />
     <meta property="og:description" content="<%- metaDescription %>" />
     <meta property="og:image" content="<%- metaImageURL %>" />
     <meta property="og:image:secure_url" content="<%- metaImageURL %>" />
+    <meta property="og:image:alt" content="<%- metaTitle %>" />
 
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="<%- metaCanonicalURL %>" />
     <meta name="twitter:title" content="<%- metaTitle %>" />
     <meta name="twitter:description" content="<%- metaDescription %>" />
     <meta name="twitter:image" content="<%- metaImageURL %>" />
@@ -32,6 +41,20 @@
   data-project="e500r4mh0gdouk29br6x0i2t"
   async>
 </script>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "<%- metaAuthor %>",
+        "url": "<%- metaCanonicalURL %>",
+        "image": "<%- metaImageURL %>",
+        "description": "<%- metaDescription %>",
+        "jobTitle": "<%- metaJobTitle %>",
+        "sameAs": <%- metaSocialLinks %>
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
