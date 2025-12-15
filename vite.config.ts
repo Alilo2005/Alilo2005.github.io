@@ -17,7 +17,7 @@ export default defineConfig({
           metaImageURL: CONFIG.seo.imageURL,
           metaAuthor: CONFIG.seo.author || CONFIG.github.username,
           metaKeywords: CONFIG.seo.keywords || '',
-          metaCanonicalURL: CONFIG.seo.canonicalURL || `https://${CONFIG.github.username}.github.io${CONFIG.base}`,
+          metaCanonicalURL: CONFIG.seo.canonicalURL || `https://${CONFIG.github.username}.github.io${CONFIG.base || '/'}`,
           metaJobTitle: CONFIG.bio || '',
           metaSocialLinks: JSON.stringify(
             Object.entries(CONFIG.social || {})
@@ -45,7 +45,9 @@ export default defineConfig({
             includeAssets: ['logo.png'],
             manifest: {
               name: CONFIG.seo.title || 'Portfolio',
-              short_name: CONFIG.seo.title?.split(' ').slice(0, 2).join(' ') || 'Portfolio',
+              short_name: (CONFIG.seo.title && CONFIG.seo.title.split(' ').length >= 2) 
+                ? CONFIG.seo.title.split(' ').slice(0, 2).join(' ') 
+                : CONFIG.seo.title || 'Portfolio',
               description: CONFIG.seo.description || 'Personal Portfolio',
               theme_color: '#000000',
               background_color: '#ffffff',
