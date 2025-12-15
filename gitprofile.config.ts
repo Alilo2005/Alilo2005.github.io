@@ -119,6 +119,13 @@ const CONFIG = {
       company: 'Spintechs',
       position: 'Web Developer Intern',
       from: 'Novembre 2025',
+      to: 'Decembre 2025',
+      companyLink: 'http://www.spintechs.net/',
+    },
+     {
+      company: 'Spintechs',
+      position: 'Web Developer',
+      from: 'Decembre 2025',
       to: 'Present',
       companyLink: 'http://www.spintechs.net/',
     }
