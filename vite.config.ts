@@ -17,7 +17,7 @@ export default defineConfig({
           metaImageURL: CONFIG.seo.imageURL,
           metaAuthor: CONFIG.seo.author || CONFIG.github.username,
           metaKeywords: CONFIG.seo.keywords || '',
-          metaCanonicalURL: CONFIG.seo.canonicalURL || `https://${CONFIG.github.username}.github.io${CONFIG.base || '/'}`,
+          metaCanonicalURL: CONFIG.seo.canonicalURL || `https://${CONFIG.github.username}.github.io${CONFIG.base === '/' ? '' : (CONFIG.base || '')}`,
           metaJobTitle: CONFIG.bio || '',
           metaSocialLinks: JSON.stringify(
             Object.entries(CONFIG.social || {})
