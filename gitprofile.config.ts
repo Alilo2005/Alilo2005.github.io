@@ -177,7 +177,7 @@ const CONFIG = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'coffee', // Default theme, check https://daisyui.com/docs/theming/
+    defaultTheme: 'dim', // Default theme, check https://daisyui.com/docs/theming/
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
