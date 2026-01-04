@@ -48,7 +48,6 @@ const CONFIG = {
   },
   social: {
     linkedin: 'mahdi-ali-59b08829b',
-    instagram: 'mahdiali9893',
     phone: '+213667622648',
     email: 'ma_mahdi@esi.dz',
   },
