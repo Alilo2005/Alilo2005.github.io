@@ -73,6 +73,7 @@ const CONFIG = {
     'Assembly',
     'DjangoRestFramework',
     'Spring boot',
+    'Nest.js'
   ],
   hobbies: [
     'Writing',
